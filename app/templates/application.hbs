@@ -1,0 +1,119 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                {{!--<!-- Brand and toggle get grouped for better mobile display -->--}}
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Munkabejelentő</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="/login">Bejelentkezés</a></li>
+                      <li><a href="/about">About</a></li>
+                  </ul>
+            
+                </div>
+              </div>
+            </nav>
+
+            <div id="bodyContent">
+              <h2 id="teszt">TESZT</h2>
+<div class="row">
+  <div class="col-xs-12">
+    <form method="post">
+      <input class="form-control" id="newname" name="newname" type="text" value="">
+      <button {{action "submitPerson"}} class="btn btn-primary"> Személy Hozzáad</button>
+    </form>
+  </div>  
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <hr>
+        <form method="post">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>DateIn</th>
+                        <th>DateOut</th>
+                        <th>Description</th>
+                        <th>Location</th>
+                        <th>Assigned To</th>
+                        <th>Delete</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{!--list-todo model=model.todos--}}
+                    {{#each model.timesheets}}
+                    <tr>
+                        <td id="{{id}}">#{{id}} {{yield}}</td>
+                        <td>{{dateIn }}</td>
+                        <td>{{ dateOut }}</td>
+                        <td>{{description}}</td>
+                        <td>{{location}}</td>
+                        <td>{{assignedId.name}}</td>
+                        <td><button {{action "toggle" id description location assignedId}} class="btn btn-default btn-sm">Szerkeszt</button></td>
+                        <td><button {{action "deleteTimesheet" id}} class="btn btn-default btn-sm">Töröl</button></td>
+                    </tr>
+                    {{/each}}
+                    {{!--add-todo model=model.people--}}
+                    {{#if toggleDisabled}}
+                    <tr>
+                        <td>&nbsp;<input type="hidden" id="id_edit"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input class="form-control" id="description_edit" name="description_edit" type="text" value="{{data.description}}"></td>
+                        <td><input class="form-control" id="location_edit" name="location_edit" type="text" value="{{data.location}}"></td>
+                        
+                        
+                        <td>
+                            <select name="assignedId_edit" id="assignedId_edit" class="form-control">
+                            {{#each model.people}}
+                                <option value="{{id}}">{{name}} -- {{id}}</option>
+                            {{/each}}
+                            </select>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td><button {{action "editTimesheet"}} class="btn btn-warning">Módosít</button></td>
+                        
+                    </tr>
+                    {{/if}}
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><input class="form-control" id="dateIn" name="dateIn" type="text" value="" disabled></td>
+                        <td><input class="form-control" id="dateOut" name="dateOut" type="text" value="" disabled></td>
+                        
+                        <td><input class="form-control" id="description" name="description" type="text" value="{{data.description}}"></td>
+                        <td><input class="form-control" id="location" name="location" type="text" value="{{data.location}}"></td>
+                        <td>
+                            <select name="assignedId" id="assignedId" class="form-control">
+                            {{#each model.people}}
+                                <option value="{{id}}">{{name}} -- {{id}}</option>
+                            {{/each}}
+                            </select>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td><button {{action "submit"}} class="btn btn-primary">Hozzáad</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
