@@ -64,12 +64,6 @@ ______
 ______
 ##Felhasználói dokumentáció
 
-Ajánlat a program helyes használatához:
-- Munkahelyre érkezéskor program indítása
-- Munka kezdése előtt közvetlenül létrehozunk egy új munkát, megadjuk a munkavégzés helyszínét
-- Távozás előtt közvetlenül módosítjuk a munkát, megadjuk a leírásban az elvégzett munka jellegét
-
-
 # Myapp
 
 This README outlines the details of collaborating on this Ember application.
@@ -123,3 +117,7 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+# Ajánlat a program helyes használatához:
+- Munkahelyre érkezéskor program indítása
+- Munka kezdése előtt közvetlenül létrehozunk egy új munkát, megadjuk a munkavégzés helyszínét
+- Távozás előtt közvetlenül módosítjuk a munkát, megadjuk a leírásban az elvégzett munka jellegét
