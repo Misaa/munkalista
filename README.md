@@ -1,3 +1,74 @@
+# Munkabejelentő
+##Az ELTE IK Alkalmazások fejlesztése tárgy keretein belül készített 3. beadandó
+
+______
+##Követelményanalízis
+
+#####**Funkcionális elvárások**
+- Személy hozzáadása
+- Munkalapot lehessen felvenni személyhez rendelve
+- Munkalapokat lehessen módosítani (leírást és helyszínt, az érkezési és távozási idő automatikusan állítódik)
+- Munkalapokat lehessen törölni
+- Munkalapok listájának megtekintése
+
+#####**Nem funkcionális követelmények**
+- A felület jól átlátható, használata egyszerű
+
+#####**Használatieset-modell**
+######Szerepkörök:
+- Vendég:
+  - munkalapok listájának(részletes adatokkal) megtekintése 
+  - új személy felvétele
+  - új munkalap felvétele
+  - munkalap szerkesztése
+  - munkalap törlése
+
+######**Használati eset diagram**
+![](docs/images/hasznalati_eset_diagram.png)
+######**Új munka felvitelének pontos menete**
+![](docs/images/folyamatleiras.png)
+
+______
+##Tervezés
+
+#####**Architektúra terv**
+######Oldaltérkép
+![](docs/images/oldalterkep.png)
+######Végpontok
+
+- GET  /: Főoldal
+- GET  /:  Munkalapok listája
+- POST /: Személy hozzáadása
+- POST /: Munkalap hozzáadása
+- POST /: Munkalap módosítása
+- POST /: Munkalap törlése
+#####**Felhasználóifelület-modell**
+Designterv
+![](docs/images/design1.png)
+![](docs/images/design2.png)
+#####**Osztálymodell**
+Adatmodell
+
+![](docs/images/adatmodell.png)
+
+Állapotdiagram
+
+![](docs/images/allapotdiagramm.png)
+
+______
+##Implementáció
+
+______
+
+______
+##Felhasználói dokumentáció
+
+Ajánlat a program helyes használatához:
+- Munkahelyre érkezéskor program indítása
+- Munka kezdése előtt közvetlenül létrehozunk egy új munkát, megadjuk a munkavégzés helyszínét
+- Távozás előtt közvetlenül módosítjuk a munkát, megadjuk a leírásban az elvégzett munka jellegét
+
+
 # Myapp
 
 This README outlines the details of collaborating on this Ember application.
@@ -17,7 +88,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone <repository-url>` this repository
 * change into the new directory
-* `npm install`
+* `npm install`q
 * `bower install`
 
 ## Running / Development
