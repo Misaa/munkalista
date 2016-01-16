@@ -33,11 +33,16 @@ ______
 
 #####**Architektúra terv**
 ######Oldaltérkép
-![](docs/images/oldalterkep.png)
+Publikus: 
+* Névjegyek listája:
+* Új névjegy
+* Névjegy módosítása
+* Névjegy törlése
+
 ######Végpontok
 
 - GET  /: Főoldal
-- GET  /:  Munkalapok listája
+- GET  /: Munkalapok listája
 - POST /: Személy hozzáadása
 - POST /: Munkalap hozzáadása
 - POST /: Munkalap módosítása
@@ -51,10 +56,6 @@ Designterv
 Adatmodell
 
 ![](docs/images/adatmodell.png)
-
-Állapotdiagram
-
-![](docs/images/allapotdiagramm.png)
 
 ______
 ##Implementáció
