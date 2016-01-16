@@ -58,12 +58,14 @@ Adatmodell
 ![](docs/images/adatmodell.png)
 
 ______
-##Implementáció
-
-______
-
-______
 ##Felhasználói dokumentáció
+- Egyoldalas alkalmazás, nem regisztrációhoz kötött az alkalmazása.
+- Ha ez az alkalmazás fut egy weboldalon, akkor adjuk hozzá nevünk a Személy hozzáadása gombbal
+
+#####Ajánlat a program helyes használatához:
+- Munkahelyre érkezéskor program indítása
+- Munka kezdése előtt közvetlenül létrehozunk egy új munkát, megadjuk a munkavégzés helyszínét
+- Távozás előtt közvetlenül módosítjuk a munkát, megadjuk a leírásban az elvégzett munka jellegét
 
 # Myapp
 
@@ -117,8 +119,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
-# Ajánlat a program helyes használatához:
-- Munkahelyre érkezéskor program indítása
-- Munka kezdése előtt közvetlenül létrehozunk egy új munkát, megadjuk a munkavégzés helyszínét
-- Távozás előtt közvetlenül módosítjuk a munkát, megadjuk a leírásban az elvégzett munka jellegét
