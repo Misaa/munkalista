@@ -42,7 +42,8 @@ ______
 - POST /: Munkalap hozzáadása
 - POST /: Munkalap módosítása
 - POST /: Munkalap törlése
-#####**Felhasználóifelület-modell**
+
+######**Felhasználóifelület-modell**
 Designterv
 ![](docs/images/design1.png)
 ![](docs/images/design2.png)
