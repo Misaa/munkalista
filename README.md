@@ -17,7 +17,7 @@ ______
 #####**Használatieset-modell**
 ######Szerepkörök:
 - Vendég:
-  - munkalapok listájának(részletes adatokkal) megtekintése 
+  - munkalapok listájának megtekintése 
   - új személy felvétele
   - új munkalap felvétele
   - munkalap szerkesztése
@@ -34,10 +34,10 @@ ______
 #####**Architektúra terv**
 ######Oldaltérkép
 Publikus: 
-* Névjegyek listája:
-* Új névjegy
-* Névjegy módosítása
-* Névjegy törlése
+* Munkalapok listája
+* Munka hozzáadása
+* Munka módosítása
+* Munka törlése
 
 ######Végpontok
 
@@ -66,6 +66,10 @@ ______
 - Munkahelyre érkezéskor program indítása
 - Munka kezdése előtt közvetlenül létrehozunk egy új munkát, megadjuk a munkavégzés helyszínét
 - Távozás előtt közvetlenül módosítjuk a munkát, megadjuk a leírásban az elvégzett munka jellegét
+
+______
+______
+
 
 # Myapp
 

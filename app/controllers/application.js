@@ -10,7 +10,6 @@ export default Ember.Controller.extend({
                 document.getElementById("location_edit").value = location;
                 document.getElementById("assignedId_edit").value = assignedId;
             
-            
         },
         editTimesheet(){
             var id = document.getElementById("id_edit").value;
