@@ -66,7 +66,6 @@ export default Ember.Controller.extend({
             var timesheet = this.store.createRecord('timesheet', formData);
            
             var person = this.store.all('person').filterBy("id",select.value).objectAt(0);
-            document.getElementById('teszt').innerHTML = timesheet.get('id');
             
             
             timesheet.set('assignedId',person);
